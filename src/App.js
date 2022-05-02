@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import RecipeCard from "./RecipeCard";
+import Button from "./components/Button/Button";
+import Header from "./components/Header/Header";
+import RecipeCard from "./components/RecipeCard/RecipeCard";
 import SearchIcon from "./search.svg";
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
+      
       <h1>Search recipe</h1>
 
       <div className="search">
