@@ -1,6 +1,8 @@
+import s from './RecipeCard.module.css'
+
 const RecipeCard = (props) => {
   return (
-    <div className="recipe">
+    <div className={s.recipe}>
       <div>
         <img
           src={
@@ -12,7 +14,7 @@ const RecipeCard = (props) => {
         />
       </div>
 
-      <div className="recipe-info">
+      <div className={s.recipe_info}>
       <p>{Math.floor(props.recipe.calories)} kcal</p>
         <span>{props.recipe.totalTime} min</span>
         <h3>{props.recipe.label}</h3>

@@ -40,32 +40,17 @@ body{
   height: 35px;
   cursor: pointer;
 }
+.search img:hover{
+  transition: all 0.2s linear;  
+  transform: scale(1.1, 1.1);
+}
+.search:focus-within{
+  box-shadow: 0px 0px 28px  rgba(55, 228, 133, 0.719);
+}
 
 .container {
   display: flex; 
   justify-content: space-around;
   flex-wrap: wrap;
 
-}
-
-.recipe{
-  width: 250px;
-  height: 400px;
-  margin: 1.5rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-}
-.recipe:hover {
-  box-shadow: 0px 0px 18px  rgba(55, 228, 170, 0.719);
-  transform: scale(1.05, 1.05);
-}
-.recipe img{
-  width: 100%;
-}
-
-.recipe-info{
-  padding: 5px;
 }
