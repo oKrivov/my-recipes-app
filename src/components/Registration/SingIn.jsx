@@ -19,7 +19,7 @@ const SingIn = (props) => {
           placeholder="Enter your password"
         />
       </div>
-      <Button/>
+      <Button name="SingIn" link=''/>
     </div>
   </div>
   );

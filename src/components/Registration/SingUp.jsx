@@ -25,7 +25,7 @@ const SingUp = (props) => {
             placeholder="Confirm your password"
           />
         </div>
-        <Button />
+        <Button name="SingUp"/>
       </div>
     </div>
   );

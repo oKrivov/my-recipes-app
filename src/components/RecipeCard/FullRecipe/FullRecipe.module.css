@@ -1,0 +1,25 @@
+.fullRecipe{
+  
+}
+
+.container{
+  width: 800px;
+  height: 300px;
+  margin: 20px auto;
+  background: rgb(192, 182, 182);
+  display: flex;
+}
+
+.image{
+width: 40%;
+background: #000;
+height: 100%;
+}
+
+.info{
+
+}
+
+.title{
+color: #fff;
+}

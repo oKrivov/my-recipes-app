@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RecipeCard from "../RecipeCard/RecipeCard";
 import s from "./Search.module.css";
 import SearchIcon from "./../../search.svg";
+import FullRecipe from "../RecipeCard/FullRecipe/FullRecipe";
 
 // `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
 
@@ -49,6 +50,9 @@ const Search = (props) => {
           <h3>No found recipes</h3>
         )}
       </div>
+
+          <FullRecipe/>
+
     </div>
   );
 };
