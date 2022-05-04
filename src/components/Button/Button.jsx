@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import s from './Button.module.css'
 
-const Button = (props) => {
+const Button = ({name,link = '/'}) => {
   return (
     <div className={s.btn}>
-      <a href="" className={s.btn_link}>Click</a>
+      <Link to={link} className={s.btn_link}>{name}</Link>
     </div>
   );
 };
