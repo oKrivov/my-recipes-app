@@ -10,7 +10,6 @@ export const useRecipeFetch = () => {
   const [state, setState] = useState('');
 
 
-
   const getRecipes = async (title) => {
     const response = await fetch(
       `${API_URL}${title}&app_id=${APP_ID}&app_key=${APP_KEY}`

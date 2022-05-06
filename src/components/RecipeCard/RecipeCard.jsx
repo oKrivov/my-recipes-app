@@ -1,24 +1,18 @@
-import s from './RecipeCard.module.css'
+import s from "./RecipeCard.module.css";
+import { Link } from "react-router-dom";
 
-const RecipeCard = (props) => {
+const RecipeCard = ({ link, image, title, id }) => {
   return (
     <div className={s.recipe}>
-      <div>
-        <img
-          src={
-            props.recipe.image !== "N/A"
-              ? props.recipe.image
-              : "https://via.placeholder.com/400"
-          }
-          alt={props.recipe.label}
-        />
-      </div>
-
-      <div className={s.recipe_info}>
-      <p>{Math.floor(props.recipe.calories)} kcal</p>
-        <span>{props.recipe.totalTime} min</span>
-        <h3>{props.recipe.label}</h3>
-      </div>
+      <Link to={link}>
+        <img src={image} alt={title} />
+        <div className={s.recipe_info}>
+          {/* <p>{Math.floor(props.recipe.calories)} kcal</p> */}
+          {/* <span>{props.recipe.totalTime} min</span>
+           */}
+          <h3>{title}</h3>
+        </div>
+      </Link>
     </div>
   );
 };
